@@ -1,2 +1,3 @@
 selenium==4.19.0
 seleniumbase==4.25.1
+python-decouple==3.8

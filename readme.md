@@ -24,11 +24,11 @@ Before running this project, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/michaelkitas/Google-Maps-Leads-Scraper-Selenium
+   git clone https://github.com/abdurrahimcs50/google-maps-scraper.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd google-maps-scraper-python
+   cd google-maps-scraper
    ```
 3. Install the dependencies:
    ```bash

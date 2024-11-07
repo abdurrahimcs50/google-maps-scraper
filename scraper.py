@@ -8,11 +8,29 @@ import time
 import json
 import re
 
+from decouple import config
 
-proxy='http://mixaliskitas_gmail_com-country-us-region-new_york-city-new_york_city:5pyqsmquyy@gate.nodemaven.com:8080'
+
+username = config('username')
+password = config('password')
+host = config('host')
+port = config('port')
+
+proxy = f"{username}:{password}@{host}:{port}"
+
+driver = Driver(uc=True, proxy=proxy,)
 
 
-driver = Driver(uc=True,)
+time.sleep(5)
+driver.maximize_window()
+driver.implicitly_wait(10)
+driver.get('https://bot.sannysoft.com/')
+time.sleep(5)
+driver.get('https://whoer.net/')
+time.sleep(5)
+print('Proxy Server Connected')
+
+
 
 try: 
   keyword = "Web Design Agency"
